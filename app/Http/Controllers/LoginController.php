@@ -10,6 +10,6 @@ class LoginController extends Controller
         return view('auth.login');
     }
     public function viewSignupForm(){
-        return view('auth.signup');
+        return view('auth.register');
     }
 }

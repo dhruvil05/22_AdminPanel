@@ -13,7 +13,8 @@ use App\Http\Controllers\LoginController;
 |
 */
 
-Route::get('/', [LoginController::class, 'viewLoginForm']);
-Route::get('/signup', [LoginController::class, 'viewSignupForm']);
+Route::get('/admin/login', [LoginController::class, 'viewLoginForm'])->name('login');
+Route::get('/admin/register', [LoginController::class, 'viewSignupForm'])->name('register');
+Route::get('/admin/forgot_password', [LoginController::class, 'viewSignupForm'])->name('forgot-password');
 
 
